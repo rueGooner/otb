@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# OTB Tech Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The task was to produce a HTML, CSS and JavaScript representation of the given `design.png` (included in assets directory) with the following features:
 
-Currently, two official plugins are available:
+- List sortable by price
+- List sortable by star rating
+- List sortable by name
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Things would have been a nice to have that I did not include:
 
-## Expanding the ESLint configuration
+- modular CSS
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Reasoning: css modules are great to work with but the time limit was rather short with the bonfire/fireworks weekend upon us so I went with Tailwind for brevity.
 
-- Configure the top-level `parserOptions` property like this:
+I decided to go with the following stack:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Vite
+- React
+- Tailwind
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Run the Project
+
+Pull/Clone the repo and install with `npm i` or `yarn`.
+
+You can run the project with `npm run dev` or `yarn dev` and you can run the tests with `npm run test` or `yarn test`.
